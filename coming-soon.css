@@ -1,0 +1,119 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fjalla One";
+  color: white;
+}
+.main-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.4;
+}
+.main {
+  background: url(img/gtr3.png) no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+.logo {
+  z-index: 10000;
+  width: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.slogan {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social-media-icon {
+  margin-right: 10px;
+  width: 36px;
+  display: inline-block;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+.social-media-icon:hover {
+  transform: scale(1.1);
+}
+.social-media {
+  text-align: center;
+}
+
+.slogan-main {
+  text-transform: uppercase;
+  font-size: 46px;
+  letter-spacing: 2px;
+}
+.slogan-subtext {
+  font-size: 18px;
+  font-family: "Average";
+  margin-top: -40px;
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 1345px) {
+  .slogan {
+    width: 100vw;
+    text-align: center;
+  }
+  .slogan-main {
+    margin-bottom: 50px;
+  }
+  .slogan-subtext {
+    text-align: center;
+  }
+  @media only screen and (max-width: 750px) {
+    .slogan {
+      width: 420px;
+    }
+    .tuned {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .main-overlay {
+      opacity: 0.7;
+    }
+    .main {
+      background: url(img/gtr6.png) no-repeat top center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 100vh;
+    }
+
+    @media only screen and (max-width: 420px) {
+      .logo {
+        width: 100px;
+      }
+      .slogan {
+        width: 380px;
+      }
+      .slogan-main {
+        font-size: 36px;
+      }
+      .slogan-subtext {
+        font-size: 16px;
+      }
+      @media only screen and (max-width: 350px) {
+        .slogan {
+          width: 300px;
+        }
+        .slogan-main {
+          font-size: 32px;
+        }
+        .slogan-subtext {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
